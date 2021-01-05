@@ -1,0 +1,232 @@
+<HTML>
+
+<HEAD>
+<STYLE type="text/css">
+
+a{
+color: #1772d0;
+text-decoration:none;}
+
+a:focus, a:hover {
+    color: #a93226;
+    text-decoration:none;}
+
+</style>
+<TITLE> Light Field Blind Motion Deblurring </TITLE>
+</HEAD>
+
+<BODY>
+
+<h2><font face='arial'>Light Field Blind Motion Deblurring: CVPR 2017 Paper 1572 Supplementary Material</font></h2>
+
+<h3><font face='arial'>Synthetically-Blurred Results</font></h3>
+
+<TABLE ALIGN=bleedleft UNITS=pixels>
+<tr>
+<td>Sharp 4D Light Field<br><IMG SRC = 'fig/grasshopper_sharp.gif'></td>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/grasshopper_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/grasshopper_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/grasshopper_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/grasshopper_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Synthetic 3D Camera Motion<br><IMG SRC = 'fig/grasshopper_path.png' WIDTH=200></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/grasshopper_path_estimation.png' WIDTH=200></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>light field RMSE=0.0251</b><br></td>
+<td>light field RMSE=0.1224<br></td>
+<td>light field RMSE=0.1555<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>path RMSE=0.2876 mm</b><br><br><br></td>
+</tr>
+<tr>
+<td>Sharp 4D Light Field<br><IMG SRC = 'fig/flower_1_sharp.gif'></td>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/flower_1_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/flower_1_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/flower_1_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/flower_1_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Synthetic 3D Camera Motion<br><IMG SRC = 'fig/flower_1_path.png' WIDTH=200></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/flower_1_path_estimation.png' WIDTH=200></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>light field RMSE=0.0309</b><br></td>
+<td>light field RMSE=0.1534<br></td>
+<td>light field RMSE=0.2099<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>path RMSE=0.1677 mm</b><br><br><br></td>
+</tr>
+<tr>
+<td>Sharp 4D Light Field<br><IMG SRC = 'fig/poppy_sharp.gif'></td>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/poppy_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/poppy_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/poppy_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/poppy_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Synthetic 3D Camera Motion<br><IMG SRC = 'fig/poppy_path.png' WIDTH=200></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/poppy_path_estimation.png' WIDTH=200></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>light field RMSE=0.0218</b><br></td>
+<td>light field RMSE=0.0986<br></td>
+<td>light field RMSE=0.1220<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>path RMSE=0.0491 mm</b><br><br><br></td>
+</tr>
+<tr>
+<td>Sharp 4D Light Field<br><IMG SRC = 'fig/flower_2_sharp.gif'></td>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/flower_2_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/flower_2_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/flower_2_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/flower_2_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Synthetic 3D Camera Motion<br><IMG SRC = 'fig/flower_2_path.png' WIDTH=200></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/flower_2_path_estimation.png' WIDTH=200></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>light field RMSE=0.0175</b><br></td>
+<td>light field RMSE=0.0645<br></td>
+<td>light field RMSE=0.0919<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>path RMSE=0.4044 mm</b><br><br><br></td>
+</tr>
+<tr>
+<td>Sharp 4D Light Field<br><IMG SRC = 'fig/leaves_sharp.gif'></td>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/leaves_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/leaves_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/leaves_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/leaves_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Synthetic 3D Camera Motion<br><IMG SRC = 'fig/leaves_path.png' WIDTH=200></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/leaves_path_estimation.png' WIDTH=200></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>light field RMSE=0.0269</b><br></td>
+<td>light field RMSE=0.1192<br></td>
+<td>light field RMSE=0.1812<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><b>path RMSE=0.1907 mm</b><br><br><br></td>
+</tr>
+</table><BR>
+
+<hr>
+
+<h3><font face='arial'>Real Handheld Results</font></h3>
+
+<TABLE ALIGN=bleedleft UNITS=pixels>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/circuit_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/circuit_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/circuit_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/circuit_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/circuit_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/rosemary_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/rosemary_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/rosemary_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/rosemary_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/rosemary_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/hani_1_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/hani_1_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/hani_1_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/hani_1_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/hani_1_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/frog_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/frog_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/frog_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/frog_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/frog_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/hani_2_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/hani_2_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/hani_2_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/hani_2_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/hani_2_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+<tr>
+<td>Motion-Blurred Light Field<br><IMG SRC = 'fig/daisy_blurred.gif'></td>
+<td><b>Ours</b><br><IMG SRC = 'fig/daisy_ours.gif'></td>
+<td>Krishnan et al. (2011)<br><IMG SRC = 'fig/daisy_krishnan.gif'></td>
+<td>Pan et al. (2014)<br><IMG SRC = 'fig/daisy_pan.gif'></td>
+</tr>
+<tr>
+<td></td>
+<td>Estimated 3D Camera Motion<br><IMG SRC = 'fig/daisy_path_estimation.png' WIDTH=200><br><br></td>
+</tr>
+</table><BR>
+
+<hr>
+
+<h3><font face='arial'>Real Camera Motion Paths (Light Fields of an Array of Point Sources)</font></h3>
+We find that typical camera motion paths can be represented by quadratic or cubic Bézier curves, as demonstrated below by the handheld motion-blurred light fields of an array of point sources.
+<br><br>
+<TABLE ALIGN=bleedleft UNITS=pixels>
+<tr>
+<td>1/40 Second Exposure<br><IMG SRC = 'fig/psf_40.gif'></td>
+<td>1/30 Second Exposure<br><IMG SRC = 'fig/psf_30.gif'></td>
+<td>1/20 Second Exposure<br><IMG SRC = 'fig/psf_20.gif'></td>
+<td>1/15 Second Exposure<br><IMG SRC = 'fig/psf_15.gif'></td>
+<td>1/10 Second Exposure<br><IMG SRC = 'fig/psf_10.gif'></td>
+<td>1/5 Second Exposure<br><IMG SRC = 'fig/psf_5.gif'></td>
+</tr>
+</table><BR>
+
+</BODY>
+
+</HTML>
