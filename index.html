@@ -226,12 +226,12 @@ background-color: #ffffd0;
               <a href="https://bmild.github.io/">Ben Mildenhall</a>,
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>
               <br>
-        <em>arXiv</em>, 2020
+        <em>CVPR</em>, 2021
               <br>
               <a href="https://pratulsrinivasan.github.io/nerv/">project page</a> /
               <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
               <a href="https://arxiv.org/abs/2012.03927">arXiv</a> /
-              <a href="bib/nerv2020.bib">bibtex</a>
+              <a href="bib/nerv2021.bib">bibtex</a>
               <p></p>
               <p>We recover relightable NeRF-like models using neural approximations of expensive visibility integrals, so we can simulate complex volumetric light transport during training.</p>
             </td>
@@ -271,14 +271,59 @@ background-color: #ffffd0;
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
               <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
               <br>
-        <em>arXiv</em>, 2020
+        <em>CVPR</em>, 2021 <font color="tomato"><strong>(Oral Presentation)</strong></font>
               <br>
               <a href="http://www.matthewtancik.com/learnit">project page</a> /
               <a href="https://www.youtube.com/watch?v=A-r9itCzcyo">video</a> /
               <a href="https://arxiv.org/abs/2012.02189">arXiv</a> /
-              <a href="bib/learnit2020.bib">bibtex</a>
+              <a href="bib/learnit2021.bib">bibtex</a>
               <p></p>
               <p>We use meta-learning to find weight initializations for coordinate-based MLPs that allow them to converge faster and generalize better.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/ibrnet_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/ibrnet_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('ibrnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('ibrnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ibrnet.github.io/">
+                <papertitle>IBRNet: Learning Multi-View Image-Based Rendering</papertitle>
+              </a>
+              <br>
+              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
+              <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/">Zhicheng Wang</a>,
+              <a href="https://www.kylegenova.com/">Kyle Genova</a>,
+              <strong>Pratul Srinivasan</strong>,
+              <a href="https://scholar.google.com/citations?user=Rh9T3EcAAAAJ&hl=en">Howard Zhou</a>, <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>,
+              <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>
+              <br>
+              <em>CVPR</em>, 2021
+              <br>
+              <a href="https://ibrnet.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2102.13090">arXiv</a> /
+              <a href="bib/ibrnet2021.bib">bibtex</a>
+              <p></p>
+              <p>Training a network that blends source views using a NeRF-like continuous neural volumetric representation, for NeRF-like performance without per-scene training.</p>
             </td>
           </tr>
 
