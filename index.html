@@ -170,7 +170,7 @@ background-color: #ffffd0;
           I grew up in Palo Alto, CA and graduated from Henry M. Gunn High School in 2010.
         </p>
         <p align=center>
-          <a href="mailto:pratul@berkeley.edu">Email</a> &nbsp/&nbsp
+          <a href="mailto:pratul.srinivasan@gmail.com">Email</a> &nbsp/&nbsp
           <a href="pdf/cv.pdf">CV</a> &nbsp/&nbsp
 	        <a href="https://scholar.google.com/citations?user=aYyDsZ0AAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
           <a href="https://twitter.com/_pratul_">Twitter</a>
@@ -228,13 +228,12 @@ background-color: #ffffd0;
               <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
               <strong> Pratul Srinivasan </strong>
               <br>
-        <em>arXiv</em>, 2021
+        <em>ICCV</em>, 2021 <font color="tomato"><strong>(Oral Presentation)</strong></font>
               <br>
-              <a href="http://jonbarron.info/mipnerf">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a>
+              <a href="http://jonbarron.info/mipnerf">project page</a> /
+              <a href="https://arxiv.org/abs/2103.13415">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a> /
+              <a href="bib/mipnerf2021.bib">bibtex</a>
               <p></p>
               <p>We modify NeRF to output volume density and emitted radiance at a volume of space instead of a single point to fix NeRF's issues with sampling and aliasing.</p>
             </td>
@@ -272,17 +271,55 @@ background-color: #ffffd0;
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
               <a href="https://www.pauldebevec.com/">Paul Debevec</a>
               <br>
-        <em>arXiv</em>, 2021
+        <em>ICCV</em>, 2021 <font color="tomato"><strong>(Oral Presentation)</strong></font>
               <br>
-              <a href="http://nerf.live">project page</a>
-        <!-- / -->
-              <!-- <a href="http://arxiv.org/">arXiv</a> -->
-        /
-              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
-        /
-              <a href="https://nerf.live/#demos">demo</a>
+              <a href="http://nerf.live">project page</a> /
+              <a href="https://arxiv.org/abs/2103.14645">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a> /
+              <a href="https://nerf.live/#demos">demo</a> /
+              <a href="bib/bakenerf2021.bib">bibtex</a>
               <p></p>
               <p>We "bake" a trained NeRF into a sparse voxel grid of colors and features in order to render it in real-time.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='nerfactor_image'><img src='img/nerfactor.gif' width="160"></div>
+                <img src='img/nerfactor.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfactor_start() {
+                  document.getElementById('nerfactor_image').style.opacity = "1";
+                }
+
+                function nerfactor_stop() {
+                  document.getElementById('nerfactor_image').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
+                <papertitle>NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination</papertitle>
+              </a>
+              <br>
+              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <strong>Pratul Srinivasan</strong>,
+              <a href="https://boyangdeng.com/">Boyang Deng</a>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
+              <a href="https://billf.mit.edu/">William T. Freeman</a>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a> /
+              <a href="https://arxiv.org/abs/2106.01970">arXiv</a> /
+              <a href="bib/nerfactor2021.bib">bibtex</a>
+              <p></p>
+              <p>We recover relightable NeRF-like models from images under a single unknown lighting condition.</p>
             </td>
           </tr>
 
