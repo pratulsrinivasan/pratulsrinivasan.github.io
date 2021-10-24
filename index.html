@@ -320,6 +320,48 @@ background-color: #ffffd0;
             </td>
           </tr>
 
+          <tr onmouseout="dpdeblur_stop()" onmouseover="dpdeblur_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='dpdeblur_image'><img src='img/dualdefocus_after.jpeg' width="160"></div>
+                <img src='img/dualdefocus_before.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function dpdeblur_start() {
+                  document.getElementById('dpdeblur_image').style.opacity = "1";
+                }
+
+                function dpdeblur_stop() {
+                  document.getElementById('dpdeblur_image').style.opacity = "0";
+                }
+                dpdeblur_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://imaging.cs.cmu.edu/dual_pixels/">
+                <papertitle>Defocus Map Estimation and Deblurring from a Single Dual-Pixel Image</papertitle>
+              </a>
+              <br>
+              <a href="https://shumianxin.github.io/">Shumian Xin</a>,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+              <strong>Pratul Srinivasan</strong>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+							<a href="https://www.cs.cmu.edu/~igkioule/">Ioannis Gkioulekas</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>
+              <br>
+        <em>ICCV</em>, 2021 <font color="tomato"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://imaging.cs.cmu.edu/dual_pixels/">project page</a> /
+              <a href="https://github.com/cmu-ci-lab/dual_pixel_defocus_estimation_deblurring">code</a> /
+              <a href="https://arxiv.org/abs/2110.05655">arXiv</a> /
+              <p></p>
+              <p>We deblur dual-pixel images by representing the scene as a multiplane image and carefully considering dual-pixel optics in an optimization framework.</p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
             <td width="25%">
               <div class="one">
