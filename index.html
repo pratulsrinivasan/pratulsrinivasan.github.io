@@ -196,6 +196,90 @@ background-color: #ffffd0;
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+        <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/candle_crop_vid_fasterpull_240.mp4" type="video/mp4">
+                </video></div>
+                <img src='img/candle_image0_patch_darker.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function rawnerf_start() {
+                  document.getElementById('rawnerf_image').style.opacity = "1";
+                }
+
+                function rawnerf_stop() {
+                  document.getElementById('rawnerf_image').style.opacity = "0";
+                }
+                rawnerf_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="rawnerf/index.html">
+                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
+              </a>
+              <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <strong>Pratul Srinivasan</strong>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
+              <p></p>
+              <p>Training a NeRF directly on linear raw camera images enables new HDR view synthesis applications and greatly increases robustness to camera noise.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/mip360_sat.mp4" type="video/mp4">
+                </video></div>
+                <img src='img/mip360_sat.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mip360_start() {
+                  document.getElementById('mip360_image').style.opacity = "1";
+                }
+
+                function mip360_stop() {
+                  document.getElementById('mip360_image').style.opacity = "0";
+                }
+                mip360_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf360">
+                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+              <strong>Pratul Srinivasan</strong>,
+              <a href="https://phogzone.com/">Peter Hedman</a>
+              <br>
+              <em>arXiv</em>, 2021
+              <br>
+              <a href="http://jonbarron.info/mipnerf360">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
+              /
+              <a href="https://youtu.be/YStDS2-Ln1s">video</a>
+              <p></p>
+              <p>We extend mip-NeRF to produce photorealistic results on unbounded scenes.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
             <td width="25%">
               <div class="one">
@@ -229,7 +313,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">project page</a> /
               <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a> /
-              <a href="https://arxiv.org/abs/2106.01970">arXiv</a> /
+              <a href="https://arxiv.org/abs/2106.01970">arXiv</a>
               <p></p>
               <p>We recover relightable NeRF-like models from images under a single unknown lighting condition.</p>
             </td>
@@ -271,7 +355,7 @@ background-color: #ffffd0;
               <br>
               <a href="http://jonbarron.info/mipnerf">project page</a> /
               <a href="https://arxiv.org/abs/2103.13415">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a> /
+              <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a>
               <p></p>
               <p>We modify NeRF to output volume density and emitted radiance at a volume of space instead of a single point to fix NeRF's issues with sampling and aliasing.</p>
             </td>
@@ -314,7 +398,7 @@ background-color: #ffffd0;
               <a href="http://nerf.live">project page</a> /
               <a href="https://arxiv.org/abs/2103.14645">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a> /
-              <a href="https://nerf.live/#demos">demo</a> /
+              <a href="https://nerf.live/#demos">demo</a>
               <p></p>
               <p>We "bake" a trained NeRF into a sparse voxel grid of colors and features in order to render it in real-time.</p>
             </td>
@@ -355,7 +439,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://imaging.cs.cmu.edu/dual_pixels/">project page</a> /
               <a href="https://github.com/cmu-ci-lab/dual_pixel_defocus_estimation_deblurring">code</a> /
-              <a href="https://arxiv.org/abs/2110.05655">arXiv</a> /
+              <a href="https://arxiv.org/abs/2110.05655">arXiv</a>
               <p></p>
               <p>We deblur dual-pixel images by representing the scene as a multiplane image and carefully considering dual-pixel optics in an optimization framework.</p>
             </td>
@@ -396,7 +480,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://pratulsrinivasan.github.io/nerv/">project page</a> /
               <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
-              <a href="https://arxiv.org/abs/2012.03927">arXiv</a> /
+              <a href="https://arxiv.org/abs/2012.03927">arXiv</a>
               <p></p>
               <p>We recover relightable NeRF-like models using neural approximations of expensive visibility integrals, so we can simulate complex volumetric light transport during training.</p>
             </td>
@@ -440,7 +524,7 @@ background-color: #ffffd0;
               <br>
               <a href="http://www.matthewtancik.com/learnit">project page</a> /
               <a href="https://www.youtube.com/watch?v=A-r9itCzcyo">video</a> /
-              <a href="https://arxiv.org/abs/2012.02189">arXiv</a> /
+              <a href="https://arxiv.org/abs/2012.02189">arXiv</a>
               <p></p>
               <p>We use meta-learning to find weight initializations for coordinate-based MLPs that allow them to converge faster and generalize better.</p>
             </td>
@@ -484,7 +568,7 @@ background-color: #ffffd0;
               <em>CVPR</em>, 2021
               <br>
               <a href="https://ibrnet.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2102.13090">arXiv</a> /
+              <a href="https://arxiv.org/abs/2102.13090">arXiv</a>
               <p></p>
               <p>Training a network that blends source views using a NeRF-like continuous neural volumetric representation, for NeRF-like performance without per-scene training.</p>
             </td>
@@ -526,7 +610,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://bmild.github.io//fourfeat/index.html">project page</a> /
               <a href="https://arxiv.org/abs/2006.10739">arXiv</a> /
-              <a href="https://github.com/tancik/fourier-feature-networks">code</a> /
+              <a href="https://github.com/tancik/fourier-feature-networks">code</a>
               <p></p>
               <p>Mapping input coordinates with simple Fourier features before passing them to a fully-connected network enables the network to learn much higher-frequency functions.</p>
             </td>
@@ -569,7 +653,7 @@ background-color: #ffffd0;
               <br>
         <em>arXiv</em>, 2020
               <br>
-              <a href="https://arxiv.org/abs/2008.03824">arXiv</a> /
+              <a href="https://arxiv.org/abs/2008.03824">arXiv</a>
               <p></p>
               <p>We recover relightable NeRF-like models by predicting per-location BRDFs and surface normals, and marching light rays through the NeRF volume to compute visibility.</p>
             </td>
@@ -612,7 +696,7 @@ background-color: #ffffd0;
               <a href="https://www.youtube.com/watch?v=JuH79E8rdKc">video</a> /
               <a href="https://www.youtube.com/watch?v=LRAqeM8EjOo">technical overview</a> /
               <a href="https://github.com/bmild/nerf">code</a> /
-	            <a href="https://www.youtube.com/watch?v=nCpGStnayHk">two minute papers</a> /
+	            <a href="https://www.youtube.com/watch?v=nCpGStnayHk">two minute papers</a>
               <p></p>
               <p>We optimize a simple neural network to represent a scene as a 5D function (3D volume + 2D view direction) from just a set of images, and synthesize photorealistic novel views.</p>
             </td>
@@ -656,7 +740,7 @@ background-color: #ffffd0;
         <em>European Conference on Computer Vision (ECCV)</em>, 2020
               <br>
               <a href="https://arxiv.org/abs/2008.01815">arXiv</a> /
-              <a href="https://cseweb.ucsd.edu/~zex014/papers/2020_mdp/2020_mdp.mp4">video</a> /
+              <a href="https://cseweb.ucsd.edu/~zex014/papers/2020_mdp/2020_mdp.mp4">video</a>
               <p></p>
               <p>We represent scenes as multi-layer panoramas with depth for VR view synthesis.</p>
             </td>
@@ -697,7 +781,7 @@ background-color: #ffffd0;
               <a href="https://pratulsrinivasan.github.io/lighthouse/">project page</a> /
               <a href="https://arxiv.org/abs/2003.08367">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=KsiZpUFPqIU">video</a> /
-              <a href="https://github.com/pratulsrinivasan/lighthouse">code</a> /
+              <a href="https://github.com/pratulsrinivasan/lighthouse">code</a>
               <p></p>
               <p>We predict a multiscale light volume from an input stereo pair, and render this volume to compute illumination at any 3D point for relighting inserted virtual objects.</p>
             </td>
@@ -739,7 +823,7 @@ background-color: #ffffd0;
               <a href="https://bmild.github.io/llff/">project page</a> /
               <a href="https://arxiv.org/abs/1905.00889">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=LY6MgDUzS3M">video</a> /
-              <a href="https://github.com/Fyusion/LLFF">code</a> /
+              <a href="https://github.com/Fyusion/LLFF">code</a>
               <p></p>
               <p>We develop a deep learning method for rendering novel views of complex real world scenes from a small number of images, and analyze it with light field sampling theory.</p>
             </td>
@@ -778,7 +862,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://arxiv.org/abs/1905.00413">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=aJqAaMNL2m4">video</a> /
-              <a href="https://github.com/google-research/google-research/tree/master/mpi_extrapolation">code</a> /
+              <a href="https://github.com/google-research/google-research/tree/master/mpi_extrapolation">code</a>
               <p></p>
               <p>We use Fourier theory to show the limits of view extrapolation with multiplane images, and develop a deep learning pipeline with 3D inpainting for better view extrapolation results.</p>
             </td>
@@ -815,7 +899,7 @@ background-color: #ffffd0;
               <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018
               <br>
               <a href="https://arxiv.org/abs/1711.07933">arXiv</a> /
-              <a href="https://github.com/google/aperture_supervision">code</a> /
+              <a href="https://github.com/google/aperture_supervision">code</a>
               <p></p>
               <p>We train a neural network to estimate a depth map from a single image using only images with different-sized apertures as supervision, and use this to synthesize artificial bokeh.</p>
             </td>
@@ -852,7 +936,7 @@ background-color: #ffffd0;
               <em>SIGGRAPH Asia</em>, 2017 &nbsp <font color="tomato"></font>
               <br>
               <a href="http://bankslab.berkeley.edu/publications/chromablur/">project page</a> /
-              <a href="https://www.youtube.com/watch?v=oGZgEmkmvvg&feature=youtu.be">video</a> /
+              <a href="https://www.youtube.com/watch?v=oGZgEmkmvvg&feature=youtu.be">video</a>
               <p></p>
               <p>We show that properly considering the eye's aberrations when rendering for VR displays increases perceived realism and helps drive accomodation.</p>
             </td>
@@ -890,7 +974,7 @@ background-color: #ffffd0;
               <a href="https://arxiv.org/abs/1708.03292">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=yLCvWoQLnms&feature=youtu.be">video</a> /
               <a href="https://github.com/pratulsrinivasan/Local_Light_Field_Synthesis">code</a> /
-              <a href="pdf/ICCV17_LF_Synthesis_Supplementary.pdf">supplementary PDF</a> /
+              <a href="pdf/ICCV17_LF_Synthesis_Supplementary.pdf">supplementary PDF</a>
               <p></p>
               <p>We train a neural network to predict ray depths and RGB colors for a local light field around a single input image.</p>
             </td>
@@ -927,7 +1011,7 @@ background-color: #ffffd0;
               <a href="https://arxiv.org/abs/1704.05416">arXiv</a> /
               <a href="https://www.youtube.com/watch?v=rtukre-ErmI&feature=youtu.be">video</a> /
               <a href="https://github.com/pratulsrinivasan/Light_Field_Blind_Motion_Deblurring">code</a> /
-              <a href="https://pratulsrinivasan.github.io/deblur_html/supplementary.html">additional results</a> /
+              <a href="https://pratulsrinivasan.github.io/deblur_html/supplementary.html">additional results</a>
               <p></p>
               <p>We develop Fourier theory to describe the effects of camera motion on light fields, and an optimization algorithm for deblurring light fields captured with unknown camera motion.</p>
             </td>
@@ -964,7 +1048,7 @@ background-color: #ffffd0;
               <br>
               <a href="pdf/ICCV15_LF_ORIENTED_WINDOWS.pdf">paper PDF</a> /
               <a href="code/ICCV15_LF_SCENE_FLOW.zip">code</a> /
-              <a href="https://youtu.be/hENxM4lBVXo">video</a> /
+              <a href="https://youtu.be/hENxM4lBVXo">video</a>
               <p></p>
               <p>We develop a 4D light field descriptor and an algorithm to use these to compute scene flow (3D motion of observed points) from two captured light fields.</p>
             </td>
@@ -1004,7 +1088,7 @@ background-color: #ffffd0;
               <br>
               <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Tao_Depth_From_Shading_2015_CVPR_paper.pdf">conference PDF</a> /
               <a href="https://cseweb.ucsd.edu/~ravir/normals_PAMI.pdf">journal PDF</a> /
-              <a href="code/CVPR15_LF_DEPTH_SHADING.zip">code</a> /
+              <a href="code/CVPR15_LF_DEPTH_SHADING.zip">code</a>
               <p></p>
               <p>We develop an algorithm that jointly considers cues from defocus, correspondence, and shading to estimate better depths from a light field.</p>
             </td>
@@ -1040,7 +1124,7 @@ background-color: #ffffd0;
               <em>Biomedical Optics Express</em>, 2014
               <br>
               <a href="https://www.osapublishing.org/boe/abstract.cfm?uri=boe-5-10-3568">journal article</a> /
-              <a href="http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm">dataset</a> /
+              <a href="http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm">dataset</a>
               <p></p>
               <p>We develop a classification algorithm to detect diseases from OCT images of the retina.</p>
             </td>
@@ -1076,7 +1160,7 @@ background-color: #ffffd0;
               <br>
               <em>Biomedical Optics Express</em>, 2014
               <br>
-              <a href="https://www.osapublishing.org/boe/abstract.cfm?uri=boe-5-2-348">journal article</a> /
+              <a href="https://www.osapublishing.org/boe/abstract.cfm?uri=boe-5-2-348">journal article</a>
               <p></p>
               <p>We develop a segmentation algorithm to quantify the shape of retinal layers in OCT images that is robust to deformations due to disease.</p>
             </td>
