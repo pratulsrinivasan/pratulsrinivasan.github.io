@@ -196,6 +196,47 @@ background-color: #ffffd0;
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td width="25%">
+        <div class="one">
+          <div class="two" id='refnerf_image'><img src='img/chrome.gif' width="160"></div>
+          <img src='img/chrome.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+        <td valign="top" width="75%">
+          <a href="https://dorverbin.github.io/refnerf/index.html">
+            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+          </a>
+          <br>
+          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+          <a href="https://phogzone.com/">Peter Hedman</a>,
+          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+          <a href="Todd Zickler">Todd Zickler</a>,
+          <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+          <strong>Pratul Srinivasan</strong>
+          <br>
+    <em>arXiv</em>, 2021
+          <br>
+          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+    /
+          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+    /
+          <a href="https://youtu.be/qrdRH9irAlk">video</a>
+          <p></p>
+          <p>We fix NeRF's shortcomings when representing shiny materials, greatly improve NeRF's normal vectors, and enable intuitive material editing.</p>
+        </td>
+      </tr>
+
         <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td width="25%">
               <div class="one">
@@ -234,7 +275,7 @@ background-color: #ffffd0;
         /
               <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
               <p></p>
-              <p>Training a NeRF directly on linear raw camera images enables new HDR view synthesis applications and greatly increases robustness to camera noise.</p>
+              <p>We train NeRFs directly on linear raw camera images, enabling new HDR view synthesis applications and greatly increasing robustness to camera noise.</p>
             </td>
           </tr>
 
@@ -262,7 +303,7 @@ background-color: #ffffd0;
                 <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
               </a>
               <br>
-              <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
               <a href="https://bmild.github.io/">Ben Mildenhall</a>,
               <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
               <strong>Pratul Srinivasan</strong>,
