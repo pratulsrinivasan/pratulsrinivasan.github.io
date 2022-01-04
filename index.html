@@ -199,8 +199,11 @@ background-color: #ffffd0;
     <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
       <td width="25%">
         <div class="one">
-          <div class="two" id='refnerf_image'><img src='img/chrome.gif' width="160"></div>
-          <img src='img/chrome.png' width="160">
+              <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="img/refnerf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='img/refnerf.jpeg' width="160">
         </div>
         <script type="text/javascript">
           function refnerf_start() {
@@ -283,9 +286,10 @@ background-color: #ffffd0;
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="img/mip360_sat.mp4" type="video/mp4">
+                <source src="img/kitchenlego_square320_crf23.mp4" type="video/mp4">
+                Your browser does not support the video tag.
                 </video></div>
-                <img src='img/mip360_sat.jpeg' width="160">
+                <img src='img/kitchenlego_square320.jpeg' width="160">
               </div>
               <script type="text/javascript">
                 function mip360_start() {
@@ -318,6 +322,94 @@ background-color: #ffffd0;
               <a href="https://youtu.be/YStDS2-Ln1s">video</a>
               <p></p>
               <p>We extend mip-NeRF to produce photorealistic results on unbounded scenes.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="urf_stop()" onmouseover="urf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='urf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/urf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/urf.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function urf_start() {
+                  document.getElementById('urf_image').style.opacity = "1";
+                }
+
+                function urf_stop() {
+                  document.getElementById('urf_image').style.opacity = "0";
+                }
+                urf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://urban-radiance-fields.github.io/">
+                <papertitle>Urban Radiance Fields</papertitle>
+              </a>
+              <br>
+							<a href="http://www.krematas.com/">Konstantinos Rematas</a>,
+							<a href="https://andrewhliu.github.io/">Andrew Liu</a>,
+							<strong>Pratul Srinivasan</strong>,
+							<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+							<a href="https://taiya.github.io/">Andrea Tagliasacchi</a>,
+							<a href="https://www.cs.princeton.edu/~funk/">Tom Funkhouser</a>,
+							<a href="https://sites.google.com/corp/view/vittoferrari"> Vittorio Ferrari</a>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="https://urban-radiance-fields.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.14643">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=qGlq5DZT6uc">video</a>
+              <p></p>
+              <p>
+								We incorporate lidar data and explicitly model the sky to reconstruct urban environments with NeRF.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ddp_image'>
+                  <img src='img/ddp_after.jpeg' width="160"></div>
+                <img src='img/ddp_before.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function ddp_start() {
+                  document.getElementById('ddp_image').style.opacity = "1";
+                }
+
+                function ddp_stop() {
+                  document.getElementById('ddp_image').style.opacity = "0";
+                }
+                ddp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2112.03288">
+                <papertitle>Dense Depth Priors for Neural Radiance Fields from Sparse Input Views</papertitle>
+              </a>
+              <br>
+              <a href="https://niessnerlab.org/members/barbara_roessle/profile.html">Barbara Roessle</a>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Pratul Srinivasan</strong>,
+              <a href="https://www.niessnerlab.org/">Matthias Nießner</a>
+              <br>
+              <em>arXiv</em>, 2021
+              <br>
+              <a href="https://arxiv.org/abs/2112.03288">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=zzkvvdcvksc">video</a>
+              <p></p>
+              <p>
+              We apply dense depth completion techniques to freely-available sparse stereo data to guide NeRF reconstructions from few input images.
+              </p>
             </td>
           </tr>
 
