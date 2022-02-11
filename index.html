@@ -196,6 +196,52 @@ background-color: #ffffd0;
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/grace_trim_square_320_crf25.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/grace_009.jpeg' width="160">
+        </div>
+        <script type="text/javascript">
+          function blocknerf_start() {
+            document.getElementById('blocknerf_image').style.opacity = "1";
+          }
+
+          function blocknerf_stop() {
+            document.getElementById('blocknerf_image').style.opacity = "0";
+          }
+          blocknerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://waymo.com/research/block-nerf/">
+          <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+        </a>
+        <br>
+        <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+        <a href="http://casser.io/">Vincent Casser</a>,
+        <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
+        <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://scholar.google.de/citations?user=pZuaUlwAAAAJ&hl=en">Henrik Kretzschmar</a>
+        <br>
+  <em>arXiv</em>, 2022
+        <br>
+        <a href="https://waymo.com/research/block-nerf/">project page</a>
+  /
+        <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
+  /
+        <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
+        <p></p>
+        <p>We build city-scale scenes from many NeRFs, trained using millions of images.</p>
+      </td>
+    </tr>
+
     <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
       <td width="25%">
         <div class="one">
