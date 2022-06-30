@@ -200,10 +200,10 @@ background-color: #ffffd0;
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='bhnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/bhnerf_before.png" type="video/mp4">
+          <source src="img/bhnerf_after.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='img/bhnerf_after.mp4' width="160">
+          <img src='img/bhnerf_before.png' width="160">
         </div>
         <script type="text/javascript">
           function bhnerf_start() {
@@ -238,6 +238,50 @@ background-color: #ffffd0;
         <p>We apply ideas from NeRF to the problem of reconstructing the dynamic emissive volume around a black hole.</p>
       </td>
     </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td width="25%">
+        <div class="one">
+              <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="img/refnerf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='img/refnerf.jpeg' width="160">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+        <td valign="top" width="75%">
+          <a href="https://dorverbin.github.io/refnerf/index.html">
+            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+          </a>
+          <br>
+          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+          <a href="https://phogzone.com/">Peter Hedman</a>,
+          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+          <a href="https://www.eecs.harvard.edu/~zickler/Main/HomePage">Todd Zickler</a>,
+          <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+          <strong>Pratul Srinivasan</strong>
+          <br>
+    <em>CVPR</em>, 2022 <font color="tomato"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+          <br>
+          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+    /
+          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+    /
+          <a href="https://youtu.be/qrdRH9irAlk">video</a>
+          <p></p>
+          <p>We fix NeRF's shortcomings when representing shiny materials, greatly improve NeRF's normal vectors, and enable intuitive material editing.</p>
+        </td>
+      </tr>
 
     <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -327,50 +371,6 @@ background-color: #ffffd0;
         <p>Free-viewpoint rendering of any body pose from a monocular video of a human.</p>
       </td>
     </tr>
-
-    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td width="25%">
-        <div class="one">
-              <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="img/refnerf.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='img/refnerf.jpeg' width="160">
-        </div>
-        <script type="text/javascript">
-          function refnerf_start() {
-            document.getElementById('refnerf_image').style.opacity = "1";
-          }
-
-          function refnerf_stop() {
-            document.getElementById('refnerf_image').style.opacity = "0";
-          }
-          refnerf_stop()
-        </script>
-      </td>
-        <td valign="top" width="75%">
-          <a href="https://dorverbin.github.io/refnerf/index.html">
-            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
-          </a>
-          <br>
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://www.eecs.harvard.edu/~zickler/Main/HomePage">Todd Zickler</a>,
-          <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-          <strong>Pratul Srinivasan</strong>
-          <br>
-    <em>CVPR</em>, 2022 <font color="tomato"><strong>(Oral Presentation)</strong></font>
-          <br>
-          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
-    /
-          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
-    /
-          <a href="https://youtu.be/qrdRH9irAlk">video</a>
-          <p></p>
-          <p>We fix NeRF's shortcomings when representing shiny materials, greatly improve NeRF's normal vectors, and enable intuitive material editing.</p>
-        </td>
-      </tr>
 
         <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td width="25%">
