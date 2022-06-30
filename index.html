@@ -196,6 +196,49 @@ background-color: #ffffd0;
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr onmouseout="bhnerf_stop()" onmouseover="bhnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bhnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/' width="160">
+        </div>
+        <script type="text/javascript">
+          function bhnerf_start() {
+            document.getElementById('bhnerf_image').style.opacity = "1";
+          }
+
+          function bhnerf_stop() {
+            document.getElementById('bhnerf_image').style.opacity = "0";
+          }
+          bhnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://imaging.cms.caltech.edu/bhnerf/">
+          <papertitle>Gravitationally Lensed Black Hole Emission Tomography</papertitle>
+        </a>
+        <br>
+        <a href="https://www.aviadlevis.info/">Aviad Levis*</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://achael.github.io/">Andrew A. Chael</a>,
+        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>,
+        <a href="http://users.cms.caltech.edu/~klbouman/">Katherine L. Bouman</a>
+        <br>
+  <em>CVPR</em>, 2022
+        <br>
+        <a href="http://imaging.cms.caltech.edu/bhnerf/">project page</a>
+  /
+        <a href="">arXiv</a>
+  /
+        <a href="https://www.youtube.com/watch?v=eFPmShxhtg0">video</a>
+        <p></p>
+        <p>We apply ideas from NeRF to the problem of reconstructing the dynamic emissive volume around a black hole.</p>
+      </td>
+    </tr>
+
     <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -228,7 +271,7 @@ background-color: #ffffd0;
         <a href="https://bmild.github.io/">Ben Mildenhall</a>,
         <strong>Pratul Srinivasan</strong>,
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="https://sites.google.com/corp/view/kretzschmar/">Henrik Kretzschmar</a>
+        <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
         <br>
   <em>CVPR</em>, 2022 <font color="tomato"><strong>(Oral Presentation)</strong></font>
         <br>
