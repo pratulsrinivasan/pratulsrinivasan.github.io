@@ -26,19 +26,17 @@
           <name>Pratul Srinivasan</name>
         </p>
         <p>
-          I'm a research scientist at <a href="https://research.google/">Google Research</a>, where I work on problems at the intersection of computer vision, computer graphics, and machine learning.
+          I'm a research scientist at <a href="https://research.google/">Google Research</a> in San Francisco, where I work on problems at the intersection of computer vision, computer graphics, and machine learning.
         </p>
         <p>
-          I received my PhD from the <a href="https://eecs.berkeley.edu/">EECS Department</a> at UC Berkeley in December 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>. At UC Berkeley, I was a member of the <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a> lab.
+          I received my PhD from the <a href="https://eecs.berkeley.edu/">EECS Department</a> at UC Berkeley in December 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>.
+
         </p>
         <p>
           During my PhD, I interned twice at <a href="https://research.google/">Google Research</a>: at Mountain View in 2017 (hosted by <a href="https://jonbarron.info/">Jon Barron</a> in <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a> group) and at New York City in 2018 (hosted by <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>).
         </p>
         <p>
-          I graduated from Duke University in 2014, where I majored in Biomedical Engineering and Computer Science. At Duke, I worked with <a href="http://people.duke.edu/~sf59/">Sina Farsiu</a> on research problems in medical computer vision.
-        </p>
-        <p>
-          I grew up in Palo Alto, CA and graduated from Henry M. Gunn High School in 2010.
+          I graduated from Duke University in 2014, where I worked with <a href="http://people.duke.edu/~sf59/">Sina Farsiu</a> on research problems in medical computer vision.
         </p>
         <p style="text-align:center">
           <a href="mailto:pratul.srinivasan@gmail.com">Email</a> &nbsp/&nbsp
@@ -66,6 +64,239 @@
     </tbody></table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <br><br>
+        <div class="one">
+          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+          <source src="img/nuvo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/nuvo.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://pratulsrinivasan.github.io/nuvo/">
+          <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+        </a>
+        <br>
+        <strong>Pratul Srinivasan</strong>,
+        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        /
+        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <p></p>
+        <p>
+        Use neural fields to recover editable UV mappings for challenging geometry (e.g. NeRFs, marching cubes meshes, DreamFusion).
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/recon.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          recon_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://reconfusion.github.io/">
+			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+        </a>
+        <br>
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
+		    <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+		    <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://poolio.github.io/">Ben Poole</a>,
+        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/">arXiv</a>
+        <p></p>
+        <p>
+        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="genten_stop()" onmouseover="genten_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='genten_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/genten.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/genten.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function genten_start() {
+            document.getElementById('genten_image').style.opacity = "1";
+          }
+
+          function genten_stop() {
+            document.getElementById('genten_image').style.opacity = "0";
+          }
+          genten_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://powers-of-10.github.io/">
+          <span class="papertitle">Generative Powers of Ten</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.ch/citations?user=v3NXpJAAAAAJ&hl=en">Xiaojuan Wang</a>,
+        <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
+        <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+        <a href="https://www.smseitz.com/">Steve Seitz</a>,
+        <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <strong>Pratul Srinivasan</strong>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://holynski.org/">Aleksander Holynski</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/">arXiv</a>
+        <p></p>
+        <p>
+        Use a text-to-image model to generate consistent content across drastically varying scales.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
+        </a>
+        <br>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.eecs.harvard.edu/~zickler/Main/HomePage">Todd Zickler</a>,
+        <strong>Pratul Srinivasan</strong>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/portalscrop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/portalscrop.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function zipnerf_start() {
+            document.getElementById('zipnerf_image').style.opacity = "1";
+          }
+
+          function zipnerf_stop() {
+            document.getElementById('zipnerf_image').style.opacity = "0";
+          }
+          zipnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://jonbarron.info/zipnerf">
+          <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
+        </a>
+        <br>
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>
+        <br>
+        <em>ICCV</em>, 2023   <font color="tomato"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>
+        <br>
+        <a href="http://jonbarron.info/zipnerf">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+        /
+        <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+        <p></p>
+        <p>
+        Combining mip-NeRF 360 and Instant NGP lets us reconstruct huge scenes.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -185,7 +416,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://kylesargent.github.io/vq3d">
-          <papertitle>VQ3D: Learning a 3D Generative Model on ImageNet</papertitle>
+          <span class="papertitle">VQ3D: Learning a 3D Generative Model on ImageNet</span>
         </a>
         <br>
         <a href="https://kylesargent.github.io/">Kyle Sargent</a>,
@@ -230,7 +461,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://grail.cs.washington.edu/projects/personnerf/">
-          <papertitle>PersonNeRF: Personalized Reconstruction from Photo Collections</papertitle>
+          <span class="papertitle">PersonNeRF: Personalized Reconstruction from Photo Collections</span>
         </a>
         <br>
         <a href="https://chungyiweng.github.io/">Chung-Yi Weng</a>,
@@ -272,7 +503,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="http://imaging.cms.caltech.edu/bhnerf/">
-          <papertitle>Gravitationally Lensed Black Hole Emission Tomography</papertitle>
+          <span class="papertitle">Gravitationally Lensed Black Hole Emission Tomography</span>
         </a>
         <br>
         <a href="https://www.aviadlevis.info/">Aviad Levis*</a>,
@@ -315,7 +546,7 @@
       </td>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <a href="https://dorverbin.github.io/refnerf/index.html">
-            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+            <span class="papertitle">Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</span>
           </a>
           <br>
           <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
@@ -359,7 +590,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://waymo.com/research/block-nerf/">
-          <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+          <span class="papertitle">Block-NeRF: Scalable Large Scene Neural View Synthesis</span>
         </a>
         <br>
         <a href="http://matthewtancik.com/">Matthew Tancik</a>,
@@ -405,7 +636,7 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://grail.cs.washington.edu/projects/humannerf/">
-          <papertitle>HumanNeRF: Free-viewpoint Rendering of Moving People from Monocular Video</papertitle>
+          <span class="papertitle">HumanNeRF: Free-viewpoint Rendering of Moving People from Monocular Video</span>
         </a>
         <br>
         <a href="https://homes.cs.washington.edu/~chungyi/">Chung-Yi Weng</a>,
@@ -447,7 +678,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://bmild.github.io/rawnerf/index.html">
-                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
+                <span class="papertitle">NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</span>
               </a>
               <br>
               <a href="https://bmild.github.io/">Ben Mildenhall</a>,
@@ -490,7 +721,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="http://jonbarron.info/mipnerf360">
-                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
+                <span class="papertitle">Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</span>
               </a>
               <br>
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
@@ -533,7 +764,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://urban-radiance-fields.github.io/">
-                <papertitle>Urban Radiance Fields</papertitle>
+                <span class="papertitle">Urban Radiance Fields</span>
               </a>
               <br>
 							<a href="http://www.krematas.com/">Konstantinos Rematas</a>,
@@ -578,7 +809,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://barbararoessle.github.io/dense_depth_priors_nerf/">
-                <papertitle>Dense Depth Priors for Neural Radiance Fields from Sparse Input Views</papertitle>
+                <span class="papertitle">Dense Depth Priors for Neural Radiance Fields from Sparse Input Views</span>
               </a>
               <br>
               <a href="https://niessnerlab.org/members/barbara_roessle/profile.html">Barbara Roessle</a>,
@@ -620,7 +851,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
-                <papertitle>NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination</papertitle>
+                <span class="papertitle">NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination</span>
               </a>
               <br>
               <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
@@ -662,7 +893,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="http://jonbarron.info/mipnerf">
-                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
+                <span class="papertitle">Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</span>
               </a>
               <br>
               <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
@@ -705,7 +936,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="http://nerf.live">
-                <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+                <span class="papertitle">Baking Neural Radiance Fields for Real-Time View Synthesis</span>
               </a>
               <br>
               <a href="https://phogzone.com/">Peter Hedman</a>,
@@ -744,7 +975,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://imaging.cs.cmu.edu/dual_pixels/">
-                <papertitle>Defocus Map Estimation and Deblurring from a Single Dual-Pixel Image</papertitle>
+                <span class="papertitle">Defocus Map Estimation and Deblurring from a Single Dual-Pixel Image</span>
               </a>
               <br>
               <a href="https://shumianxin.github.io/">Shumian Xin</a>,
@@ -786,7 +1017,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://pratulsrinivasan.github.io/nerv/">
-                <papertitle>NeRV: Neural Reflectance and Visibility Fields for Relighting and View Synthesis</papertitle>
+                <span class="papertitle">NeRV: Neural Reflectance and Visibility Fields for Relighting and View Synthesis</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -829,7 +1060,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="http://www.matthewtancik.com/learnit">
-                <papertitle>Learned Initializations for Optimizing Coordinate-Based Neural Representations</papertitle>
+                <span class="papertitle">Learned Initializations for Optimizing Coordinate-Based Neural Representations</span>
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
@@ -873,7 +1104,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ibrnet.github.io/">
-                <papertitle>IBRNet: Learning Multi-View Image-Based Rendering</papertitle>
+                <span class="papertitle">IBRNet: Learning Multi-View Image-Based Rendering</span>
               </a>
               <br>
               <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
@@ -914,7 +1145,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://bmild.github.io//fourfeat/index.html">
-                <papertitle>Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</papertitle>
+                <span class="papertitle">Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</span>
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
@@ -959,7 +1190,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2008.03824">
-                <papertitle>Neural Reflectance Fields for Appearance Acquisition</papertitle>
+                <span class="papertitle">Neural Reflectance Fields for Appearance Acquisition</span>
               </a>
               <br>
               <a href="http://cseweb.ucsd.edu/~bisai/">Sai Bi*</a>,
@@ -999,7 +1230,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="http://www.matthewtancik.com/nerf">
-                <papertitle>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</papertitle>
+                <span class="papertitle">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</span>
               </a>
               <br>
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
@@ -1044,7 +1275,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2008.01815">
-                <papertitle>Deep Multi Depth Panoramas for View Synthesis</papertitle>
+                <span class="papertitle">Deep Multi Depth Panoramas for View Synthesis</span>
               </a>
               <br>
               <a href="https://www.linkedin.com/in/kaienlin2576/">Kai-En Lin</a>,
@@ -1086,7 +1317,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://pratulsrinivasan.github.io/lighthouse/">
-                <papertitle>Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</papertitle>
+                <span class="papertitle">Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</span>
               </a>
               <br>
               <strong>Pratul Srinivasan*</strong>,
@@ -1127,7 +1358,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://bmild.github.io/llff/">
-                <papertitle>Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines</papertitle>
+                <span class="papertitle">Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines</span>
               </a>
               <br>
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
@@ -1169,7 +1400,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1905.00413">
-                <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
+                <span class="papertitle">Pushing the Boundaries of View Extrapolation with Multiplane Images</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>, <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>,
@@ -1208,7 +1439,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1711.07933">
-                <papertitle>Aperture Supervision for Monocular Depth Estimation</papertitle>
+                <span class="papertitle">Aperture Supervision for Monocular Depth Estimation</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -1228,6 +1459,7 @@
 
           <tr onmouseout="cb_stop()" onmouseover="cb_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <br><br><br><br>
               <div class="one">
                 <div class="two" id='cb_image'><img src='img/chromablur_after.jpg' width="160"></div>
                 <img src='img/chromablur_before.jpg' width="160">
@@ -1245,7 +1477,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="http://bankslab.berkeley.edu/publications/chromablur/">
-                <papertitle>ChromaBlur: Rendering Chromatic Eye Aberration Improves Accommodation and Realism</papertitle>
+                <span class="papertitle">ChromaBlur: Rendering Chromatic Eye Aberration Improves Accommodation and Realism</span>
               </a>
               <br>
               <a href="https://steven.cholewiak.com/">Steven A. Cholewiak</a>,
@@ -1265,6 +1497,7 @@
 
           <tr onmouseout="lf_stop()" onmouseover="lf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <br><br>
               <div class="one">
                 <div class="two" id='lf_image'><img src='img/lfsyn_after.gif' width="160"></div>
                 <img src='img/lfsyn_before.gif' width="160">
@@ -1282,7 +1515,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1708.03292">
-                <papertitle>Learning to Synthesize a 4D RGBD Light Field from a Single Image</papertitle>
+                <span class="papertitle">Learning to Synthesize a 4D RGBD Light Field from a Single Image</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>, <a href="https://ssnl.github.io/">Tongzhou Wang</a>,
@@ -1320,7 +1553,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1704.05416">
-                <papertitle>Light Field Blind Motion Deblurring</papertitle>
+                <span class="papertitle">Light Field Blind Motion Deblurring</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -1340,6 +1573,7 @@
 
           <tr onmouseout="sf_stop()" onmouseover="sf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <br>
               <div class="one">
                 <div class="two" id='sf_image'><img src='img/ow_after.gif' width="160"></div>
                 <img src='img/ow_before.gif' width="160">
@@ -1357,7 +1591,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="pdf/ICCV15_LF_ORIENTED_WINDOWS.pdf">
-                <papertitle>Oriented Light-Field Windows for Scene Flow</papertitle>
+                <span class="papertitle">Oriented Light-Field Windows for Scene Flow</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -1394,7 +1628,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Tao_Depth_From_Shading_2015_CVPR_paper.pdf">
-                <papertitle>Shape Estimation from Shading, Defocus, and Correspondence Using Light-Field Angular Coherence</papertitle>
+                <span class="papertitle">Shape Estimation from Shading, Defocus, and Correspondence Using Light-Field Angular Coherence</span>
               </a>
               <br>
               <a href="https://scholar.google.com/citations?user=P_GSjQMAAAAJ&hl=en">Michael W. Tao</a>,
@@ -1417,6 +1651,7 @@
 
           <tr onmouseout="dd_stop()" onmouseover="dd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <br><br>
               <div class="one">
                 <div class="two" id='dd_image'><img src='img/dd_after.png' width="160"></div>
                 <img src='img/dd_before.png' width="160">
@@ -1434,7 +1669,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://www.osapublishing.org/boe/abstract.cfm?uri=boe-5-10-3568">
-                <papertitle>Fully Automated Detection of Diabetic Macular Edema and Dry Age-Related Macular Degeneration from Optical Coherence Tomography Images</papertitle>
+                <span class="papertitle">Fully Automated Detection of Diabetic Macular Edema and Dry Age-Related Macular Degeneration from Optical Coherence Tomography Images</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -1453,6 +1688,7 @@
 
           <tr onmouseout="seg_stop()" onmouseover="seg_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <br>
               <div class="one">
                 <div class="two" id='seg_image'><img src='img/seg_after.png'></div>
                 <img src='img/seg_before.png'>
@@ -1470,7 +1706,7 @@
             </td>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1704.05416">
-                <papertitle>Automatic Segmentation of up to Ten Layer Boundaries in SD-OCT Images of the Mouse Retina With and Without Missing Layers due to Pathology</papertitle>
+                <span class="papertitle">Automatic Segmentation of up to Ten Layer Boundaries in SD-OCT Images of the Mouse Retina With and Without Missing Layers due to Pathology</span>
               </a>
               <br>
               <strong>Pratul Srinivasan</strong>,
@@ -1486,18 +1722,19 @@
               <p>We develop a segmentation algorithm to quantify the shape of retinal layers in OCT images that is robust to deformations due to disease.</p>
             </td>
           </tr>
-
+      </tbody>
       </table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+      <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td>
         <h2>Teaching</h2>
         </td>
       </tr>
       </tbody>
-      </table>
+      </table> -->
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr onmouseout="box_stop()" onmouseover="box_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
@@ -1518,11 +1755,11 @@
         <td style="padding:20px;width:25%;vertical-align:middle">
           <p>
             <a href="https://cs184.eecs.berkeley.edu/sp18">
-            <papertitle>CS184 - Computer Graphics and Imaging, Spring 2018 (GSI)</papertitle>
+            <span class="papertitle">CS184 - Computer Graphics and Imaging, Spring 2018 (GSI)</span>
             </a>
             <br><br>
             <a href="https://cs184.eecs.berkeley.edu/sp19">
-            <papertitle>CS184 - Computer Graphics and Imaging, Spring 2019 (GSI)</papertitle>
+            <span class="papertitle">CS184 - Computer Graphics and Imaging, Spring 2019 (GSI)</span>
             </a>
             <br>
           </p>
@@ -1530,7 +1767,7 @@
       </tr>
 
     </tbody>
-    </table>
+    </table> -->
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
@@ -1538,7 +1775,7 @@
         <br>
         <p style="text-align:right;font-size:small;">
           You've probably seen this website template before, thanks to <a href="https://jonbarron.info">Jon Barron</a>. <br>
-          Last updated May 2020.
+          Last updated December 2023.
         </p>
         </td>
       </tr>
