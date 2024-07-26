@@ -68,7 +68,7 @@
     <tr onmouseout="illum_stop()" onmouseover="illum_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <div class="two" id='illum_image'><video  width=100% height=100% muted autoplay loop>
           <source src="img/illum.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
@@ -76,11 +76,11 @@
         </div>
         <script type="text/javascript">
           function illum_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
+            document.getElementById('illum_image').style.opacity = "1";
           }
 
           function illum_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
+            document.getElementById('illum_image').style.opacity = "0";
           }
           illum_stop()
         </script>
