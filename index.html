@@ -26,7 +26,7 @@
           <name>Pratul Srinivasan</name>
         </p>
         <p>
-          I'm a research scientist at <a href="https://research.google/">Google Research</a> in San Francisco, where I work on problems at the intersection of computer vision, computer graphics, and machine learning.
+          I'm a research scientist at <a href="https://research.google/">Google DeepMind</a> in San Francisco, where I work on problems at the intersection of computer vision, computer graphics, and machine learning.
         </p>
         <p>
           I received my PhD from the <a href="https://eecs.berkeley.edu/">EECS Department</a> at UC Berkeley in December 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>.
@@ -65,6 +65,50 @@
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="illum_stop()" onmouseover="illum_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/illum.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/illum.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function illum_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function illum_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          illum_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://illuminerf.github.io/">
+			<span class="papertitle">IllumiNeRF: 3D Relighting without Inverse Rendering</span>
+        </a>
+        <br>
+				<a href="https://xiaoming-zhao.com/">Xiaoming Zhao</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://illuminerf.github.io">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2406.06527">arXiv</a>
+        <p></p>
+        <p>
+				3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -96,7 +140,7 @@
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
         <a href="https://bmild.github.io/">Ben Mildenhall</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>ECCV</em>, 2024
         <br>
         <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
         /
@@ -106,6 +150,149 @@
         <p></p>
         <p>
         Use neural fields to recover editable UV mappings for challenging geometry (e.g. NeRFs, marching cubes meshes, DreamFusion).
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/cat3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/cat3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat3d_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function cat3d_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          cat3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cat3d.github.io/">
+			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models</span>
+        </a>
+        <br>
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
+        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
+				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <strong>Pratul Srinivasan</strong>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://poolio.github.io/">Ben Poole</a>*
+
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://cat3d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <p></p>
+        <p>
+				A system built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="img/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/bog.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <span class="papertitle">Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis</span>
+        </a>
+        <br>
+				<a href="https://creiser.github.io/">Christian Reiser</a>,
+				<a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+				<strong>Pratul Srinivasan</strong>,
+				<a href="https://dorverbin.github.io/">Dor Verbin</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+				<a href="https://phogzone.com/">Peter Hedman</a>*,
+				<a href="https://www.cvlibs.net/">Andreas Geiger</a>*		
+        <br>
+        <em>SIGGRAPH</em>, 2024
+        <br>
+        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
+        /
+        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
+        <p></p>
+        <p>
+        Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
+        </a>
+        <br>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.eecs.harvard.edu/~zickler/Main/HomePage">Todd Zickler</a>,
+        <strong>Pratul Srinivasan</strong>
+        <br>
+        <em>CVPR</em>, 2024 <font color="tomato"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
         </p>
       </td>
     </tr>
@@ -147,7 +334,7 @@
         <a href="https://poolio.github.io/">Ben Poole</a>,
         <a href="https://holynski.org/">Aleksander Holynski*</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>CVPR</em>, 2024
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
@@ -194,7 +381,7 @@
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://holynski.org/">Aleksander Holynski</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>CVPR</em>, 2024
         <br>
         <a href="https://powers-of-10.github.io/">project page</a>
         /
@@ -202,52 +389,6 @@
         <p></p>
         <p>
         Use a text-to-image model to generate consistent content across drastically varying scales.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/eclipse_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/eclipse_before.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function eclipse_start() {
-            document.getElementById('eclipse_image').style.opacity = "1";
-          }
-
-          function eclipse_stop() {
-            document.getElementById('eclipse_image').style.opacity = "0";
-          }
-          eclipse_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://dorverbin.github.io/eclipse">
-          <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
-        </a>
-        <br>
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>,
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="https://www.eecs.harvard.edu/~zickler/Main/HomePage">Todd Zickler</a>,
-        <strong>Pratul Srinivasan</strong>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://dorverbin.github.io/eclipse">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
-        /
-        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
-        <p></p>
-        <p>
-        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
         </p>
       </td>
     </tr>
