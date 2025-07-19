@@ -7,7 +7,7 @@
 
   <title>Pratul Srinivasan</title>
 
-  <meta name="author" content="Jon Barron">
+  <meta name="author" content="Pratul Srinivasan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -26,28 +26,27 @@
           <name>Pratul Srinivasan</name>
         </p>
         <p>
-          I'm a research scientist at <a href="https://research.google/">Google DeepMind</a> in San Francisco, where I work on problems at the intersection of computer vision, computer graphics, and machine learning.
+          I'm a research scientist at Google DeepMind in San Francisco, where I work on NeRF-related research and other problems at the intersection of computer vision, graphics, and machine learning.
         </p>
         <p>
-          I received my PhD from the <a href="https://eecs.berkeley.edu/">EECS Department</a> at UC Berkeley in December 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>.
-
-        </p>
-        <p>
-          During my PhD, I interned twice at <a href="https://research.google/">Google Research</a>: at Mountain View in 2017 (hosted by <a href="https://jonbarron.info/">Jon Barron</a> in <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a> group) and at New York City in 2018 (hosted by <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>).
+          I received my PhD from the EECS Department at UC Berkeley in 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>.
+          During my PhD, I interned twice at Google Research, hosted by <a href="https://jonbarron.info/">Jon Barron</a> in Mountain View and <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a> in New York.
         </p>
         <p>
           I graduated from Duke University in 2014, where I worked with <a href="http://people.duke.edu/~sf59/">Sina Farsiu</a> on research problems in medical computer vision.
         </p>
+        <p>
+          I've been fortunate to receive the <a href="https://www.siggraph.org/awards/significant-new-researcher-award/"> 2025 SIGGRAPH Significant New Researcher Award</a>, the <a href="https://awards.acm.org/doctoral-dissertation"> 2021 ACM Doctoral Disseration Award Honorable Mention</a>, the <a href="https://www2.eecs.berkeley.edu/Students/Awards/17/"> 2020 David J. Sakrison Memorial Prize</a>, and best paper awards at ECCV 2020, ICCV 2021, and CVPR 2022.
+        </p>
         <p style="text-align:center">
           <a href="mailto:pratul.srinivasan@gmail.com">Email</a> &nbsp/&nbsp
-          <a href="pdf/cv.pdf">CV</a> &nbsp/&nbsp
 	        <a href="https://scholar.google.com/citations?user=aYyDsZ0AAAAJ&hl">Google Scholar</a> &nbsp/&nbsp
           <a href="https://twitter.com/_pratul_">Twitter</a>
         </p>
         </td>
         <td style="padding:2.5%;width:40%;max-width:40%">
-	         <a href="img/avatar.jpg">
-        <img src="img/avatar_circle.png" width="250px"></a>
+	         <!-- <a href="img/pratul_square.jpg"> -->
+        <img src="img/pratul_square.jpg" width="250px"></a>
         </td>
       </tr>
     </tbody></table>
@@ -55,15 +54,194 @@
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
           <h2>Research and Publications</h2>
-          <p>
-            * denotes equal contribution co-authorship
-
-          </p>
         </td>
       </tr>
     </tbody></table>
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="dm_stop()" onmouseover="dm_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='img/dm_iclr_teaser.gif' width=100%>
+        </div>
+        <script type="text/javascript">
+          function dm_start() {
+            document.getElementById('dm_image').style.opacity = "1";
+          }
+
+          function dm_stop() {
+            document.getElementById('dm_image').style.opacity = "0";
+          }
+          dm_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://imaging.cms.caltech.edu/cwnf/">
+          <span class="papertitle">Revealing the 3D Cosmic Web through Gravitationally Constrained Neural Fields</span>
+        </a>
+        <br>
+        <a href="https://brandonyzhao.github.io/">Brandon Zhao</a>,
+        <a href="https://www.aviadlevis.info/">Aviad Levis</a>,
+        <a href="https://liamconnorastro.com/">Liam Connor</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="http://users.cms.caltech.edu/~klbouman/">Katherine L. Bouman</a>
+        <br>
+        <em>ICLR</em>, 2025
+        <br>
+        <a href="https://imaging.cms.caltech.edu/cwnf/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2504.15262">arXiv</a>
+        /
+        <a href="https://github.com/brandonyzhao/jax-lensing-3d">code</a>
+        <p></p>
+        <p>
+				We reconstruct 3D dark matter fields by optimizing a neural field ensemble through a differentiable simulation of weak gravitational lensing.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+          <source src="img/r2r.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/r2r.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function r2r_start() {
+            document.getElementById('r2r_image').style.opacity = "1";
+          }
+
+          function r2r_stop() {
+            document.getElementById('r2r_image').style.opacity = "0";
+          }
+          r2r_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://relight-to-reconstruct.github.io/">
+          <span class="papertitle">Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation</span>
+        </a>
+        <br>
+        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+        <strong>Pratul P. Srinivasan</strong>, 
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>
+        <br>
+        <em>CVPR</em>, 2025 <font color=tomato><strong>(Highlight)</strong></font>
+        <br>
+        <a href="https://relight-to-reconstruct.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
+        <p></p>
+        <p>
+				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
+          <source src="img/simvs.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/simvs.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function simvs_start() {
+            document.getElementById('simvs_image').style.opacity = "1";
+          }
+
+          function simvs_stop() {
+            document.getElementById('simvs_image').style.opacity = "0";
+          }
+          simvs_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://alextrevithick.github.io/simvs/">
+          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
+        </a>
+        <br>
+        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a  href="https://poolio.github.io/">Ben Poole</a>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://holynski.org/">Aleksander Holynski</a>,
+        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+        <strong>Pratul P. Srinivasan</strong>
+        <br>
+        <em>CVPR</em>, 2025
+        <br>
+        <a href="https://alextrevithick.github.io/simvs/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
+        <p></p>
+        <p>
+        Simulating the world with video models lets you make inconsistent captures consistent.
+        </p>
+      </td>
+    </tr>
+    
+    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
+          <source src="img/nerfcasting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/nerfcasting.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nerfcasting_start() {
+            document.getElementById('nerfcasting_image').style.opacity = "1";
+          }
+
+          function nerfcasting_stop() {
+            document.getElementById('nerfcasting_image').style.opacity = "0";
+          }
+          nerfcasting_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/nerf-casting">
+          <span class="papertitle">NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</span>
+        </a>
+        <br>
+				
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://benattal.github.io/">Benjamin Attal</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+        <br>
+        <em>SIGGRAPH Asia</em>, 2024
+        <br>
+        <a href="https://dorverbin.github.io/nerf-casting">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+        <p></p>
+        <p>
+        Casting reflection cones inside NeRF lets us synthesize photorealistic specular appearance in real-world scenes.
+        </p>
+      </td>
+    </tr>
+            
 
     <tr onmouseout="illum_stop()" onmouseover="illum_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -97,7 +275,7 @@
         <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
         <a href="https://henzler.github.io/">Philipp Henzler</a>
         <br>
-        <em>arXiv</em>, 2024
+        <em>NeurIPS</em>, 2024
         <br>
         <a href="https://illuminerf.github.io">project page</a>
         /
@@ -108,6 +286,101 @@
         </p>
       </td>
     </tr>
+
+
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/cat3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/cat3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat3d_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function cat3d_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          cat3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cat3d.github.io/">
+			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models</span>
+        </a>
+        <br>
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
+        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
+				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <strong>Pratul Srinivasan</strong>,
+				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://poolio.github.io/">Ben Poole</a>*
+
+        <br>
+        <em>NeurIPS</em>, 2024 <font color="tomato"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://cat3d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <p></p>
+        <p>
+				A system built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+        </p>
+      </td>
+    </tr>
+            
+            
+    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+          <source src="img/flash_cache.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/flash_cache.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function flash_cache_start() {
+            document.getElementById('flash_cache_image').style.opacity = "1";
+          }
+
+          function flash_cache_stop() {
+            document.getElementById('flash_cache_image').style.opacity = "0";
+          }
+          flash_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://benattal.github.io/flash-cache/">
+          <span class="papertitle">Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</span>
+        </a>
+        <br>
+        <a href="https://benattal.github.io/">Benjamin Attal</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+        <strong>Pratul Srinivasan</strong>
+        <br>
+        <em>ECCV</em>, 2024 <font color="tomato"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://benattal.github.io/flash-cache/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2409.05867">arXiv</a>
+        <p></p>
+        <p>
+          Using radiance caches, importance sampling, and control variates helps reduce bias in inverse rendering, resulting in better estimates of geometry, materials, and lighting.
+        </p>
+      </td>
+    </tr>
+
 
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -149,54 +422,7 @@
         <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
         <p></p>
         <p>
-        Use neural fields to recover editable UV mappings for challenging geometry (e.g. NeRFs, marching cubes meshes, DreamFusion).
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/cat3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models</span>
-        </a>
-        <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <strong>Pratul Srinivasan</strong>,
-				<a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p>
-        <p>
-				A system built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+        We use neural fields to recover editable UV mappings for challenging geometry (e.g. NeRFs, marching cubes meshes, DreamFusion).
         </p>
       </td>
     </tr>
@@ -247,6 +473,47 @@
         <p></p>
         <p>
         Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="rtnf_stop()" onmouseover="rtnf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='img/rtnf.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function rtnf_start() {
+            document.getElementById('rtnf_image').style.opacity = "1";
+          }
+
+          function rtnf_stop() {
+            document.getElementById('rtnf_image').style.opacity = "0";
+          }
+          rtnf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://imaging.cms.caltech.edu/rtnf/">
+          <span class="papertitle">Single-View Refractive Index Tomography with Neural Fields</span>
+        </a>
+        <br>
+        <a href="https://brandonyzhao.github.io/">Brandon Zhao</a>,
+        <a href="https://www.aviadlevis.info/">Aviad Levis</a>,
+        <a href="https://liamconnorastro.com/">Liam Connor</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="http://users.cms.caltech.edu/~klbouman/">Katherine L. Bouman</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://imaging.cms.caltech.edu/rtnf/">project page</a>
+        /
+        <a href="https://github.com/brandonyzhao/rtnf">code</a>
+        /
+        <a href=https://arxiv.org/abs/2309.04437>arXiv</a>
+        <p></p>
+        <p>
+        We reconstruct a 3D refractive field from a single image by modeling how rays curve through a volume with known light sources, to reconstruct dark matter distributions (in simulation).
         </p>
       </td>
     </tr>
@@ -481,7 +748,7 @@
           <a href="https://arxiv.org/abs/2302.14859">arXiv</a>
           <p></p>
           <p>
-          We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
+          Use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
           </p>
         </td>
       </tr>
@@ -530,7 +797,7 @@
           <a href="https://arxiv.org/abs/2302.12249">arXiv</a>
           <p></p>
           <p>
-          We use volumetric rendering with a sparse 3D feature grid and 2D feature planes to do real-time view synthesis.
+          Use volumetric rendering with a sparse 3D feature grid and 2D feature planes to do real-time view synthesis.
           </p>
         </td>
       </tr>
@@ -660,7 +927,7 @@
         /
         <a href="https://www.youtube.com/watch?v=eFPmShxhtg0">video</a>
         <p></p>
-        <p>We apply ideas from NeRF to the problem of reconstructing the dynamic emissive volume around a black hole.</p>
+        <p>NeRF for the problem of reconstructing the dynamic emissive volume around a black hole.</p>
       </td>
     </tr>
 
