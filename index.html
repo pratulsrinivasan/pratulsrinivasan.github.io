@@ -66,14 +66,14 @@
           <img src='img/opt.gif' width=100%>
         </div>
         <script type="text/javascript">
-          function r2r_start() {
+          function opt_start() {
             document.getElementById('r2r_image').style.opacity = "1";
           }
 
-          function r2r_stop() {
+          function opt_stop() {
             document.getElementById('r2r_image').style.opacity = "0";
           }
-          r2r_stop()
+          opt_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
@@ -97,6 +97,53 @@
         <p></p>
         <p>
 				First 3D reconstruction of the high-energy gas "flares" rotating around a black hole.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="b3d_stop()" onmouseover="b3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='b3d_image'><video  width=100% muted autoplay loop>
+          <source src="img/bolt3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/bolt3d.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function b3d_start() {
+            document.getElementById('b3d_image').style.opacity = "1";
+          }
+
+          function b3d_stop() {
+            document.getElementById('b3d_image').style.opacity = "0";
+          }
+          b3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://szymanowiczs.github.io/bolt3d">
+          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
+        </a>
+        <br>
+        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
+        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
+        <strong>Pratul Srinivasan</strong>,
+        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
+        <a href="https://holynski.org">Aleksander Holynski</a>,
+        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
+		    <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://henzler.github.io">Philipp Henzler</a>
+        <br>
+        <em>ICCV</em>, 2025
+        <br>
+        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
+        /
+        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+        <p></p>
+        <p>
+		    By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
         </p>
       </td>
     </tr>
